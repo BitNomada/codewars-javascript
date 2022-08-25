@@ -29,32 +29,31 @@ Note:
 If you are given an array with multiple answers, return the lowest correct index.
 */
 
-let indice = findEvenIndex([1,100,50,-51,1,1])
-console.log(indice)
+findEvenIndex([1,100,50,-51,1,1])
 
 function findEvenIndex(arr){
 
-    let sumaElementos = 0
+    let sum = 0
     
     for(let i = 0; i < arr.length; i++){
-        sumaElementos += arr[i]
+        sum += arr[i]
     }
 
-    let indice = 0
-    let sumaIzquierda = 0
+    let ind = 0
+    let sumLeft = 0
 
     for(let i = 0; i < arr.length; i++){
         
-        let sumaDerecha = sumaElementos - sumaIzquierda - arr[i]
+        let sumRight = sum - sumLeft - arr[i]
 
-        if(sumaIzquierda != sumaDerecha){
-           sumaIzquierda += arr[i] 
+        if(sumLeft != sumRight){
+           sumLeft += arr[i] 
         } else {
-            indice = i
+            ind = i
             break
         }
     }
 
-    return indice
+    return ind
     
 }
