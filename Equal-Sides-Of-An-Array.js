@@ -37,7 +37,7 @@ function findEvenIndex(arr){
         sum += arr[i]
     }
 
-    let ind = 0
+    let ind = -1
     let sumLeft = 0
 
     for(let i = 0; i < arr.length; i++){
