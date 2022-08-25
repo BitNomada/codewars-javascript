@@ -29,8 +29,6 @@ Note:
 If you are given an array with multiple answers, return the lowest correct index.
 */
 
-findEvenIndex([1,100,50,-51,1,1])
-
 function findEvenIndex(arr){
 
     let sum = 0
