@@ -17,7 +17,6 @@ function ipsBetween(start, end){
     let startDivided = start.split(".")
     let endDivided = end.split(".")
 
-
     let currentDifference = 0
     let difference = 0
 
